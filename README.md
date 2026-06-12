@@ -4,6 +4,11 @@ Xinru is a voice input app for Apple Silicon Mac. It combines local speech recog
 
 心如是一款面向 Apple Silicon Mac 的语音输入工具，把本地语音识别、AI 人设、云端 AI 来源和本地 AI 模型整合到一个桌面工作流里。
 
+## Quick Links / 快速入口
+
+- Website / 网站：<https://swaywu1968.github.io>
+- Repository / 仓库：<https://github.com/swaywu1968/swaywu1968.github.io>
+- Beta Download / 测试版下载：<https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXvsEh6dtm0IhLCoiT1HYT6oUJyVAcf5tKOpsFSCjTE1KwVX6V8w70W2%2F%24%7Bf%7D%3Fo%3DArW_xe9w2Gn6Viv1G6l-f1fGdK6CBfV_uhqsQC7CNRO5%26v%3D1%26x%3D3%26a%3DCAogB9bl3FmjDTCRUFS7XZTm9Cx1Pj7FOa5biSXimihtrwYSeBCT_5ji6zMYk4-UtvUzIgEAKgkC6AMA_3czgl9SBKhQnJVaBDDvRbZqJh3wDt-Hz2WVKf4snFXdBt3leLRdY13q-jEm5dnS1beeLS0kniZ3ciZlGCAla_GAyah3McFwSfHaZf5M-4jtuJ_h2XhiUh6wvOX0yfcQbQ%26e%3D1783867180%26fl%3D%26r%3DDD5318F3-4BFA-4574-AAB7-F84411B7B0A6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.largeattachment%26ckz%3D5A5206F4-62FD-4130-A81B-FABB97B504D9%26p%3D185%26s%3D-WfpsywwHQxAYb-l3xqiYDC9L3w&uk=wGgkpusFyphpV9UcCvqpkQ&f=%E5%BF%83%E5%A6%82-%E6%B5%8B%E8%AF%95%E7%89%88-5.1.0-arm64.dmg&sz=259512809>
 ## Download / 下载
 
 - Current beta download: iCloud private link from the official website
