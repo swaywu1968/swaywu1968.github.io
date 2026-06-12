@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>心如 Xinru</title>
+    <meta
+      name="description"
+      content="心如 Xinru - Local Whisper + AI personas voice input tool for Apple Silicon Mac."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Xinru home">
+          <span class="brand-mark">心</span>
+          <span class="brand-text">Xinru</span>
+        </a>
+        <nav class="topnav">
+          <a href="#download" data-i18n="nav.download">下载</a>
+          <a href="#personas" data-i18n="nav.personas">人设</a>
+          <a href="#about" data-i18n="nav.about">关于</a>
+        </nav>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+          中文 / EN
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Apple Silicon Mac 专用</p>
+            <h1 data-i18n="hero.title">心如，把语音变成真正可用的文字。</h1>
+            <p class="hero-desc" data-i18n="hero.desc">
+              本地 Whisper 负责识别，AI 人设负责整理。录音后可直接粘贴到当前光标位置，也可以继续做翻译、会议纪要、课堂笔记和网课摘要。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#download" data-i18n="hero.primaryCta">下载最新测试版</a>
+              <a class="button ghost" href="#personas" data-i18n="hero.secondaryCta">查看人设</a>
+            </div>
+            <ul class="hero-points">
+              <li data-i18n="hero.point1">本地语音识别，隐私优先</li>
+              <li data-i18n="hero.point2">中英双语界面，支持混合输入</li>
+              <li data-i18n="hero.point3">8 个公开内置人设 + 4 个自定义人设</li>
+            </ul>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-card">
+              <p class="card-label" data-i18n="hero.cardLabel">产品定位</p>
+              <h2 data-i18n="hero.cardTitle">Local Whisper + AI Personas</h2>
+              <p data-i18n="hero.cardDesc">
+                专为 Apple Silicon Mac 打造的语音输入工具，适合写作、翻译、会议、学习和日常 AI 对话。
+              </p>
+            </div>
+            <div class="mini-grid">
+              <div class="mini-card">
+                <strong data-i18n="hero.mini1Title">fn / Globe</strong>
+                <span data-i18n="hero.mini1Desc">全局快捷录音</span>
+              </div>
+              <div class="mini-card">
+                <strong data-i18n="hero.mini2Title">100% Local ASR</strong>
+                <span data-i18n="hero.mini2Desc">音频不离开设备</span>
+              </div>
+              <div class="mini-card">
+                <strong data-i18n="hero.mini3Title">AI Personas</strong>
+                <span data-i18n="hero.mini3Desc">按场景整理文本</span>
+              </div>
+              <div class="mini-card">
+                <strong data-i18n="hero.mini4Title">Bilingual UI</strong>
+                <span data-i18n="hero.mini4Desc">全站中英双语</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="download">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="download.eyebrow">Download</p>
+            <h2 data-i18n="download.title">下载最新测试版</h2>
+            <p data-i18n="download.desc">
+              当前先通过 GitHub Releases 发布测试版本。后续我们可以再接入自动展示最新版本号、更新时间和更新说明。
+            </p>
+          </div>
+          <div class="download-card">
+            <div>
+              <p class="download-badge" data-i18n="download.badge">Beta Channel</p>
+              <h3 data-i18n="download.cardTitle">心如测试版 / Xinru Beta</h3>
+              <p data-i18n="download.cardDesc">
+                支持本地 Whisper、AI 人设、本地 AI 管理和中英双语界面。适用于 Apple Silicon Mac。
+              </p>
+            </div>
+            <div class="download-actions">
+              <a
+                class="button primary"
+                href="https://github.com/swaywu1968/swaywu1968.github.io/releases"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="download.primaryCta"
+              >前往下载页</a>
+              <a
+                class="button ghost"
+                href="mailto:swaywu1968@gmail.com"
+                data-i18n="download.secondaryCta"
+              >联系我获取测试版</a>
+            </div>
+          </div>
+          <div class="system-grid">
+            <div class="info-card">
+              <h3 data-i18n="download.reqTitle">系统要求</h3>
+              <p data-i18n="download.req1">macOS 12 或更高版本</p>
+              <p data-i18n="download.req2">Apple Silicon: M1 / M2 / M3 / M4</p>
+            </div>
+            <div class="info-card">
+              <h3 data-i18n="download.privacyTitle">隐私说明</h3>
+              <p data-i18n="download.privacyDesc">语音识别 100% 本地完成，云端 AI 为可选项，可完全离线使用。</p>
+            </div>
+            <div class="info-card">
+              <h3 data-i18n="download.noteTitle">当前状态</h3>
+              <p data-i18n="download.noteDesc">这是官网第一版，后面会继续补充版本日志、截图、FAQ 和更新记录。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="personas">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="personas.eyebrow">Personas</p>
+            <h2 data-i18n="personas.title">8 个公开内置人设</h2>
+            <p data-i18n="personas.desc">
+              每个人设都对应一个典型使用场景。网站和程序以后都以这套名称为准，并保持中英双语一致。
+            </p>
+          </div>
+          <div class="persona-grid" id="personaGrid"></div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+            <h2 data-i18n="about.title">关于心如</h2>
+            <p data-i18n="about.desc">
+              心如是一款面向中文场景优化的语音输入工具，把本地识别、AI 改写和不同工作流整理在一个桌面应用里。
+            </p>
+          </div>
+          <div class="about-grid">
+            <article class="feature-card">
+              <h3 data-i18n="about.card1Title">高精度语音识别</h3>
+              <p data-i18n="about.card1Desc">多种 ASR 模型可选，多道幻觉检测机制保障输出质量。</p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="about.card2Title">人设 × 专属 AI</h3>
+              <p data-i18n="about.card2Desc">每个人设独享专属 AI，多云端和多本地自由搭配。</p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="about.card3Title">fn 键快捷录音</h3>
+              <p data-i18n="about.card3Desc">前台后台都能工作，结果可直接粘贴到光标位置。</p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="about.card4Title">隐私优先</h3>
+              <p data-i18n="about.card4Desc">语音识别 100% 本地完成，音频不离开设备。</p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="about.card5Title">本地 AI 管理</h3>
+              <p data-i18n="about.card5Desc">Apple Silicon 专属，一键下载运行本地大语言模型。</p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="about.card6Title">多语言混合输入</h3>
+              <p data-i18n="about.card6Desc">中英日韩德等多语言混说，界面也同步支持中英双语。</p>
+            </article>
+          </div>
+          <div class="footer-card">
+            <p data-i18n="about.platform">仅支持 Apple Silicon Mac（M1 / M2 / M3 / M4）</p>
+            <a href="mailto:swaywu1968@gmail.com">swaywu1968@gmail.com</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
