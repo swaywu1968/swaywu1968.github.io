@@ -1,9 +1,9 @@
 :root {
-  --bg: #0b1220;
-  --bg-soft: #101827;
-  --panel: rgba(18, 27, 43, 0.92);
-  --panel-strong: rgba(26, 37, 58, 0.96);
-  --panel-muted: rgba(34, 48, 74, 0.74);
+  --bg: #08090c;
+  --bg-soft: #101216;
+  --panel: rgba(17, 20, 27, 0.92);
+  --panel-strong: rgba(24, 28, 36, 0.96);
+  --panel-muted: rgba(35, 41, 52, 0.74);
   --border: rgba(148, 163, 184, 0.16);
   --border-strong: rgba(96, 165, 250, 0.22);
   --text: #e5edf8;
@@ -37,9 +37,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
   line-height: 1.65;
   background:
-    radial-gradient(circle at top left, rgba(61, 141, 255, 0.16), transparent 28%),
-    radial-gradient(circle at 85% 10%, rgba(66, 214, 182, 0.13), transparent 26%),
-    linear-gradient(180deg, #08101d 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 24%),
+    radial-gradient(circle at 85% 10%, rgba(91, 162, 255, 0.08), transparent 24%),
+    linear-gradient(180deg, #050608 0%, var(--bg) 100%);
 }
 
 body::before {
@@ -102,6 +102,8 @@ code {
   align-items: center;
   gap: 12px;
   font-weight: 700;
+  flex: 0 0 auto;
+  overflow: hidden;
 }
 
 .brand img,
