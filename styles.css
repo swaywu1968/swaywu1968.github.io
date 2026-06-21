@@ -81,8 +81,9 @@ body::before {
     background: rgba(11, 18, 32, 0.78);
   }
 
-  .lang-button {
+  .lang-label {
     background: rgba(255, 255, 255, 0.03);
+    color: var(--text-soft);
   }
 
   .button-secondary {
@@ -122,10 +123,10 @@ code {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(248, 250, 252, 0.58);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.03);
 }
 
 .nav {
@@ -174,12 +175,10 @@ code {
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   justify-self: end;
 }
 
 .nav-link,
-.lang-button,
 .button,
 .faq-question {
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
@@ -197,21 +196,16 @@ code {
   color: var(--text);
 }
 
-.lang-button {
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.66);
-  color: var(--text-soft);
-  padding: 8px 12px;
+.lang-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
   border-radius: 999px;
-  font: inherit;
-  cursor: pointer;
-}
-
-.lang-button.is-active,
-.lang-button:hover {
-  color: var(--text);
-  border-color: var(--border-strong);
-  background: rgba(91, 162, 255, 0.12);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.46);
+  color: var(--text-soft);
+  font-weight: 600;
 }
 
 .section {
@@ -320,7 +314,6 @@ code {
 }
 
 .button:hover,
-.lang-button:hover,
 .faq-question:hover {
   transform: translateY(-1px);
 }
