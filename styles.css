@@ -56,7 +56,7 @@ body::before {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
+  :root {
     --bg: #08090c;
     --bg-soft: #101216;
     --panel: rgba(17, 20, 27, 0.92);
@@ -70,66 +70,28 @@ body::before {
     --text-faint: #6f819e;
   }
 
-  :root:not([data-theme]) body {
+  body {
     background:
       radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 24%),
       radial-gradient(circle at 85% 10%, rgba(91, 162, 255, 0.08), transparent 24%),
       linear-gradient(180deg, #050608 0%, var(--bg) 100%);
   }
 
-  :root:not([data-theme]) .site-header {
+  .site-header {
     background: rgba(11, 18, 32, 0.78);
   }
 
-  :root:not([data-theme]) .lang-button {
+  .lang-button {
     background: rgba(255, 255, 255, 0.03);
   }
 
-  :root:not([data-theme]) .button-secondary {
+  .button-secondary {
     background: rgba(255, 255, 255, 0.03);
   }
 
-  :root:not([data-theme]) .site-footer {
+  .site-footer {
     background: transparent;
   }
-}
-
-:root[data-theme="dark"] {
-  --bg: #08090c;
-  --bg-soft: #101216;
-  --panel: rgba(17, 20, 27, 0.92);
-  --panel-strong: rgba(24, 28, 36, 0.96);
-  --panel-muted: rgba(35, 41, 52, 0.74);
-  --border: rgba(148, 163, 184, 0.16);
-  --border-strong: rgba(96, 165, 250, 0.22);
-  --shadow-soft: 0 20px 60px rgba(2, 8, 23, 0.34);
-  --text: #e5edf8;
-  --text-soft: #9fb0c8;
-  --text-faint: #6f819e;
-}
-
-:root[data-theme="dark"] body {
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 24%),
-    radial-gradient(circle at 85% 10%, rgba(91, 162, 255, 0.08), transparent 24%),
-    linear-gradient(180deg, #050608 0%, var(--bg) 100%);
-}
-
-:root[data-theme="dark"] .site-header {
-  background: rgba(11, 18, 32, 0.78);
-}
-
-:root[data-theme="dark"] .lang-button,
-:root[data-theme="dark"] .theme-button {
-  background: rgba(255, 255, 255, 0.03);
-}
-
-:root[data-theme="dark"] .button-secondary {
-  background: rgba(255, 255, 255, 0.03);
-}
-
-:root[data-theme="dark"] .site-footer {
-  background: transparent;
 }
 
 a {
@@ -170,9 +132,9 @@ code {
   width: min(100% - 32px, var(--container));
   margin: 0 auto;
   min-height: 76px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   gap: 20px;
 }
 
@@ -203,27 +165,20 @@ code {
 }
 
 .nav-links {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
-
-.toolbar-switches {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.theme-switch,
 .lang-switch {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  justify-self: end;
 }
 
 .nav-link,
-.theme-button,
 .lang-button,
 .button,
 .faq-question {
@@ -242,7 +197,6 @@ code {
   color: var(--text);
 }
 
-.theme-button,
 .lang-button {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.66);
@@ -254,8 +208,6 @@ code {
 }
 
 .lang-button.is-active,
-.theme-button.is-active,
-.theme-button:hover,
 .lang-button:hover {
   color: var(--text);
   border-color: var(--border-strong);
@@ -264,6 +216,11 @@ code {
 
 .section {
   padding: 72px 0;
+}
+
+.section > * {
+  width: min(100% - 32px, var(--container));
+  margin-inline: auto;
 }
 
 .hero-layout,
@@ -277,6 +234,10 @@ code {
 
 .hero-layout-single {
   grid-template-columns: 1fr;
+}
+
+.hero-layout-single > div:first-child {
+  width: 100%;
 }
 
 .page-hero {
@@ -359,7 +320,6 @@ code {
 }
 
 .button:hover,
-.theme-button:hover,
 .lang-button:hover,
 .faq-question:hover {
   transform: translateY(-1px);
@@ -680,7 +640,7 @@ code {
   .nav {
     padding: 14px 0;
     align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .hero-copy h1,
@@ -708,10 +668,15 @@ code {
     grid-template-columns: 1fr;
   }
 
-  .toolbar-switches,
   .hero-actions,
   .footer-links {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .nav-links,
+  .lang-switch {
+    justify-content: flex-start;
+    justify-self: start;
   }
 }
