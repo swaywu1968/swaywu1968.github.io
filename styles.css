@@ -88,6 +88,8 @@ code {
 }
 
 .nav {
+  width: min(100% - 32px, var(--container));
+  margin: 0 auto;
   min-height: 76px;
   display: flex;
   align-items: center;
@@ -102,9 +104,11 @@ code {
   font-weight: 700;
 }
 
+.brand img,
 .brand-logo {
   width: 38px;
   height: 38px;
+  flex: 0 0 38px;
   object-fit: contain;
   filter: drop-shadow(0 0 16px rgba(66, 214, 182, 0.16));
 }
