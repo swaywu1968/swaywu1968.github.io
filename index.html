@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>心如 Xinru</title>
     <meta
       name="description"
-      content="心如 Xinru - Local Whisper + AI personas voice input tool for Apple Silicon Mac."
+      content="心如是一款面向中文场景优化的桌面 AI 工具，集本地语音识别、AI 人设整理、文字工作台与本地 AI 管理于一体。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,191 +17,162 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="brand" href="#top" aria-label="Xinru home">
-          <span class="brand-mark">心</span>
-          <span class="brand-text">Xinru</span>
+    <header class="site-header">
+      <div class="nav">
+        <a class="brand" href="./index.html" aria-label="Xinru home">
+          <img src="./assets/logo/xinru-logo.png" alt="心如 Logo" />
+          <span>心如 Xinru</span>
         </a>
-        <nav class="topnav">
-          <a href="#download" data-i18n="nav.download">下载</a>
-          <a href="#personas" data-i18n="nav.personas">人设</a>
-          <a href="#about" data-i18n="nav.about">关于</a>
+        <nav class="nav-links">
+          <a class="nav-link is-active" href="./index.html">首页</a>
+          <a class="nav-link" href="./download.html">下载</a>
+          <a class="nav-link" href="./guide.html">新手教程</a>
+          <a class="nav-link" href="./features.html">功能</a>
+          <a class="nav-link" href="./personas.html">人设</a>
+          <a class="nav-link" href="./about.html">关于</a>
+          <a class="nav-link" href="./faq.html">FAQ</a>
         </nav>
-        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
-          中文 / EN
-        </button>
-      </header>
+        <div class="lang-switch">
+          <button class="lang-button is-active" type="button">中文</button>
+          <button class="lang-button" type="button">EN</button>
+        </div>
+      </div>
+    </header>
 
-      <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow" data-i18n="hero.eyebrow">Apple Silicon Mac 专用</p>
-            <h1 data-i18n="hero.title">心如，把语音变成真正可用的文字。</h1>
-            <p class="hero-desc" data-i18n="hero.desc">
-              本地 Whisper 负责识别，AI 人设负责整理。录音后可直接粘贴到当前光标位置，也可以继续做翻译、会议纪要、课堂笔记和网课摘要。
+    <main>
+      <section class="section">
+        <div class="hero-layout">
+          <div>
+            <span class="badge">优先支持 Apple Silicon Mac</span>
+            <h1 class="section-title">心如，让语音真正变成可用的文字</h1>
+            <p class="section-desc">
+              本地语音识别负责听清内容，AI 人设负责整理表达。除了转写与润色，心如也能承担日常问答、写作辅助、会议整理、学习总结，以及本地 AI 模型管理等更完整的工作流。
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#download" data-i18n="hero.primaryCta">下载最新测试版</a>
-              <a class="button ghost" href="#personas" data-i18n="hero.secondaryCta">查看人设</a>
-              <a
-                class="button ghost"
-                href="https://github.com/swaywu1968/swaywu1968.github.io"
-                target="_blank"
-                rel="noreferrer"
-                data-i18n="hero.repoCta"
-              >GitHub Repo / GitHub 仓库</a>
+              <a class="button button-primary" href="./download.html">下载当前测试版</a>
+              <a class="button button-secondary" href="./guide.html">查看新手教程</a>
             </div>
-            <ul class="hero-points">
-              <li data-i18n="hero.point1">本地语音识别，隐私优先</li>
-              <li data-i18n="hero.point2">中英双语界面，支持混合输入</li>
-              <li data-i18n="hero.point3">8 个公开内置人设 + 4 个自定义人设</li>
-            </ul>
+            <div class="card-grid three-cols">
+              <article class="stat-card">
+                <span class="status-tag">Local Whisper</span>
+                <h3>本地语音识别</h3>
+                <p>音频可完全留在设备内处理，适合重视隐私的输入场景。</p>
+              </article>
+              <article class="stat-card">
+                <span class="status-tag">AI Personas</span>
+                <h3>多种 AI 整理模式</h3>
+                <p>同一段内容可按翻译、会议、课堂、摘要等不同目标整理输出。</p>
+              </article>
+              <article class="stat-card">
+                <span class="status-tag">Local AI</span>
+                <h3>本地 AI 管理工具</h3>
+                <p>支持下载、接入并管理本地模型，逐步形成完整的一站式 AI 工作台。</p>
+              </article>
+            </div>
           </div>
-          <div class="hero-panel">
-            <div class="hero-card">
-              <p class="card-label" data-i18n="hero.cardLabel">产品定位</p>
-              <h2 data-i18n="hero.cardTitle">Local Whisper + AI Personas</h2>
-              <p data-i18n="hero.cardDesc">
-                专为 Apple Silicon Mac 打造的语音输入工具，适合写作、翻译、会议、学习和日常 AI 对话。
+
+          <aside class="hero-panel">
+            <div class="preview-window">
+              <div class="preview-bar"></div>
+              <div class="preview-body">
+                <div class="preview-block preview-block-lg"></div>
+                <div class="preview-block preview-block-sm"></div>
+                <div class="preview-block"></div>
+                <div class="preview-block"></div>
+              </div>
+            </div>
+            <div class="panel">
+              <span class="badge">当前官网状态</span>
+              <h3>网站已切换为多页面结构</h3>
+              <p>
+                网站现已拆成首页、下载、教程、功能、人设、关于与 FAQ 等独立页面，信息更清楚，也更接近程序本身的使用逻辑。
               </p>
             </div>
-            <div class="mini-grid">
-              <div class="mini-card">
-                <strong data-i18n="hero.mini1Title">fn / Globe</strong>
-                <span data-i18n="hero.mini1Desc">全局快捷录音</span>
-              </div>
-              <div class="mini-card">
-                <strong data-i18n="hero.mini2Title">100% Local ASR</strong>
-                <span data-i18n="hero.mini2Desc">音频不离开设备</span>
-              </div>
-              <div class="mini-card">
-                <strong data-i18n="hero.mini3Title">AI Personas</strong>
-                <span data-i18n="hero.mini3Desc">按场景整理文本</span>
-              </div>
-              <div class="mini-card">
-                <strong data-i18n="hero.mini4Title">Bilingual UI</strong>
-                <span data-i18n="hero.mini4Desc">全站中英双语</span>
-              </div>
-            </div>
-          </div>
-        </section>
+          </aside>
+        </div>
+      </section>
 
-        <section class="section" id="download">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="download.eyebrow">Download</p>
-            <h2 data-i18n="download.title">下载最新测试版</h2>
-            <p data-i18n="download.desc">
-              当前先使用 iCloud 私人链接分发测试版本，只给朋友试用和做 demo。后续更正式的测试版发布时，再切换到更标准的下载方式。
-            </p>
-          </div>
-          <div class="download-card">
-            <div>
-              <p class="download-badge" data-i18n="download.badge">Beta Channel</p>
-              <h3 data-i18n="download.cardTitle">心如测试版 / Xinru Beta</h3>
-              <p data-i18n="download.cardDesc">
-                支持本地 Whisper、AI 人设、本地 AI 管理和中英双语界面。适用于 Apple Silicon Mac。
-              </p>
-            </div>
-            <div class="download-actions">
-              <a
-                class="button primary"
-                href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASng-L2eNyKnw8jiQTneyUN2VK-vAS7RJMVm1ZrgA3Dy2V1zsOaK3PZ1%2F%24%7Bf%7D%3Fo%3DAlyQaE9ZvYNFL9AesA0phccjxUvnjLHu7vDZWurzL5My%26v%3D1%26x%3D3%26a%3DCAogesoUhsgWWpK1t_ZBm9EAZemkwT0NP89JuB6GHFuDmbsSeBDwnvCs7jMY8K7rgPgzIgEAKgkC6AMA_2j10x1SBHZUr69aBIrc9nVqJuU9lBeh-OTMOgsKNYkD76LCGZSYwm5_xtZfVj5VC6E6uJZsrzThciboEGucASPCC8LxtpYS9p3sTaQZPYQ86V6dFQAy11G96xdST30LJg%26e%3D1784560670%26fl%3D%26r%3D854FD5A4-91AF-4E22-AC5E-00EEAB2E7E5E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.largeattachment%26ckz%3D5A5206F4-62FD-4130-A81B-FABB97B504D9%26p%3D185%26s%3DuLR4ym5EbF8RKzOKAH1E4HY3ZwY&uk=V1KLpGoI9RNWlkB99pc4Hg&f=%E5%BF%83%E5%A6%82-%E6%B5%8B%E8%AF%95%E7%89%88-5.3.3-mac-arm.dmg&sz=208422182"
-                target="_blank"
-                rel="noreferrer"
-                data-i18n="download.primaryCta"
-              >前往下载页</a>
-              <a
-                class="button ghost"
-                href="mailto:swaywu1968@gmail.com"
-                data-i18n="download.secondaryCta"
-              >联系我获取测试版</a>
-              <a
-                class="button ghost"
-                href="https://github.com/swaywu1968/swaywu1968.github.io"
-                target="_blank"
-                rel="noreferrer"
-                data-i18n="download.repoCta"
-              >查看 GitHub 仓库</a>
-            </div>
-          </div>
-          <div class="system-grid">
-            <div class="info-card">
-              <h3 data-i18n="download.reqTitle">系统要求</h3>
-              <p data-i18n="download.req1">macOS 12 或更高版本</p>
-              <p data-i18n="download.req2">Apple Silicon: M1 / M2 / M3 / M4</p>
-            </div>
-            <div class="info-card">
-              <h3 data-i18n="download.privacyTitle">隐私说明</h3>
-              <p data-i18n="download.privacyDesc">语音识别 100% 本地完成，云端 AI 为可选项，可完全离线使用。</p>
-            </div>
-            <div class="info-card">
-              <h3 data-i18n="download.noteTitle">当前状态</h3>
-              <p data-i18n="download.noteDesc">这是官网第一版，后面会继续补充版本日志、截图、FAQ 和更新记录。</p>
-            </div>
-          </div>
-        </section>
+      <section class="section">
+        <div class="section-heading">
+          <span class="badge">核心能力</span>
+          <h2>不是单一转写工具，而是一整套 AI 输入工作流</h2>
+          <p class="section-desc">
+            心如以中文场景为核心，同时兼顾多语言混合输入、云端与本地 AI 协作，以及桌面端常见的快捷处理需求。
+          </p>
+        </div>
+        <div class="card-grid three-cols">
+          <article class="card">
+            <h3>语音 → 文字</h3>
+            <p>支持录音、音频文件转写与多语言混合识别，结果可继续编辑和整理。</p>
+          </article>
+          <article class="card">
+            <h3>文字工作台</h3>
+            <p>适合翻译、润色、总结、改写与日常 AI 对话，逐步支持更自然的流式输出体验。</p>
+          </article>
+          <article class="card">
+            <h3>本地 AI 管理</h3>
+            <p>为本地模型下载、接入与调试提供统一入口，后续也会继续强化模型管理体验。</p>
+          </article>
+          <article class="card">
+            <h3>多 AI 来源</h3>
+            <p>不同人设可绑定不同 AI 来源，云端与本地方案可以按用途灵活配置。</p>
+          </article>
+          <article class="card">
+            <h3>快捷键输入</h3>
+            <p>适合写作、会议、课堂、网课、聊天和日常输入，尽量减少在不同工具间来回切换。</p>
+          </article>
+          <article class="card">
+            <h3>隐私优先</h3>
+            <p>语音识别可 100% 本地完成；云端 AI 为可选项，离线工作流依然成立。</p>
+          </article>
+        </div>
+      </section>
 
-        <section class="section" id="personas">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="personas.eyebrow">Personas</p>
-            <h2 data-i18n="personas.title">8 个公开内置人设</h2>
-            <p data-i18n="personas.desc">
-              每个人设都对应一个典型使用场景。网站和程序以后都以这套名称为准，并保持中英双语一致。
-            </p>
+      <section class="section two-column">
+        <div class="panel">
+          <span class="badge">下载</span>
+          <h2>当前公开测试版</h2>
+          <p class="section-desc">
+            现阶段网站先提供当前可公开分发的测试版入口。后续随着不同平台与语言版本陆续整理完成，这里会扩展为更清晰的版本矩阵。
+          </p>
+          <p><strong>当前可下载：</strong> 心如-测试版-5.3.3-mac-arm.dmg</p>
+          <a class="button button-primary" href="./download.html">前往下载页面</a>
+        </div>
+        <div class="panel">
+          <span class="badge">下一步</span>
+          <h2>新手先看教程，再按场景选功能</h2>
+          <p class="section-desc">
+            对第一次接触心如的用户来说，先理解模型下载、人设选择、语音输入与文字工作台的关系，会比直接下载更容易上手。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-secondary" href="./guide.html">打开新手教程</a>
+            <a class="button button-secondary" href="./features.html">查看功能总览</a>
           </div>
-          <div class="persona-grid" id="personaGrid"></div>
-        </section>
+        </div>
+      </section>
+    </main>
 
-        <section class="section" id="about">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="about.eyebrow">About</p>
-            <h2 data-i18n="about.title">关于心如</h2>
-            <p data-i18n="about.desc">
-              心如是一款面向中文场景优化的语音输入工具，把本地识别、AI 改写和不同工作流整理在一个桌面应用里。
-            </p>
-          </div>
-          <div class="about-grid">
-            <article class="feature-card">
-              <h3 data-i18n="about.card1Title">高精度语音识别</h3>
-              <p data-i18n="about.card1Desc">多种 ASR 模型可选，多道幻觉检测机制保障输出质量。</p>
-            </article>
-            <article class="feature-card">
-              <h3 data-i18n="about.card2Title">人设 × 专属 AI</h3>
-              <p data-i18n="about.card2Desc">每个人设独享专属 AI，多云端和多本地自由搭配。</p>
-            </article>
-            <article class="feature-card">
-              <h3 data-i18n="about.card3Title">fn 键快捷录音</h3>
-              <p data-i18n="about.card3Desc">前台后台都能工作，结果可直接粘贴到光标位置。</p>
-            </article>
-            <article class="feature-card">
-              <h3 data-i18n="about.card4Title">隐私优先</h3>
-              <p data-i18n="about.card4Desc">语音识别 100% 本地完成，音频不离开设备。</p>
-            </article>
-            <article class="feature-card">
-              <h3 data-i18n="about.card5Title">本地 AI 管理</h3>
-              <p data-i18n="about.card5Desc">Apple Silicon 专属，一键下载运行本地大语言模型。</p>
-            </article>
-            <article class="feature-card">
-              <h3 data-i18n="about.card6Title">多语言混合输入</h3>
-              <p data-i18n="about.card6Desc">中英日韩德等多语言混说，界面也同步支持中英双语。</p>
-            </article>
-          </div>
-          <div class="footer-card">
-            <p data-i18n="about.platform">仅支持 Apple Silicon Mac（M1 / M2 / M3 / M4）</p>
-            <a
-              href="https://github.com/swaywu1968/swaywu1968.github.io"
-              target="_blank"
-              rel="noreferrer"
-              data-i18n="about.repoLink"
-            >
-              github.com/swaywu1968/swaywu1968.github.io
-            </a>
-            <a href="mailto:swaywu1968@gmail.com">swaywu1968@gmail.com</a>
-          </div>
-        </section>
-      </main>
-    </div>
+    <footer class="site-footer">
+      <div class="footer-layout">
+        <div>
+          <a class="brand" href="./index.html">
+            <img src="./assets/logo/xinru-logo.png" alt="心如 Logo" />
+            <span>心如 Xinru</span>
+          </a>
+          <p>面向中文场景优化的桌面 AI 工具。</p>
+        </div>
+        <div class="footer-links">
+          <a href="./download.html">下载</a>
+          <a href="./guide.html">新手教程</a>
+          <a href="./features.html">功能</a>
+          <a href="./personas.html">人设</a>
+          <a href="./about.html">关于</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="https://github.com/swaywu1968/swaywu1968.github.io">GitHub</a>
+          <a href="mailto:swaywu1968@gmail.com">联系我</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
   </body>
