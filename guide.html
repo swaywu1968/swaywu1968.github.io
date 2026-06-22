@@ -19,17 +19,9 @@
         <article class="panel"><h2>系统要求</h2><div class="mini-list"><div>macOS 12 或更高版本</div><div>Apple Silicon Mac：M1 / M2 / M3 / M4</div><div>建议先准备一个可用的云端 AI key</div><div>如果要使用本地 AI，请预留额外磁盘空间</div></div></article>
       </div>
 
-      <div class="section-heading" style="margin-top:40px;"><h2 class="section-title">添加云端 AI 来源</h2><p class="section-desc">这是最建议新用户先完成的一步。先把云端来源配置好，心如会更快进入真正可用的状态。</p></div>
+      <div class="section-heading" style="margin-top:40px;"><h2 class="section-title">第一步：添加云端 AI 来源</h2><p class="section-desc">对于大部分电脑而言，运行本地大模型并不轻松。因此更建议新用户先完成云端大模型配置，让心如尽快进入真正可用的状态。</p></div>
       <div class="panel">
-        <div class="mini-list">
-          <div>打开首页右上角的 <code>设置</code>，进入 <code>AI配置</code></div>
-          <div>点击右上角的 <code>添加来源</code></div>
-          <div>在新建来源面板中选择 <code>云端</code></div>
-          <div>选择服务商，例如 <code>OpenAI</code> 或 <code>DeepSeek</code></div>
-          <div>填写来源名称，把你的 API key 粘贴到 <code>API Key</code> 栏</div>
-          <div>检查 <code>Base URL</code> 和模型是否正确</div>
-          <div>点击 <code>测试连接</code>，通过后再点击 <code>保存</code></div>
-        </div>
+        <h3>图文详解</h3>
         <div class="guide-shot-grid">
           <figure class="guide-shot">
             <img src="./assets/screenshots/guide-ai-source-step-1.jpg" alt="心如首页右上角设置按钮" />
@@ -41,16 +33,21 @@
           </figure>
           <figure class="guide-shot">
             <img src="./assets/screenshots/guide-ai-source-step-3.jpg" alt="新建 AI 来源面板，选择云端与填写 DeepSeek 信息" />
-            <figcaption>3. 选择 <code>云端</code>，填写来源名称、API key、Base URL 和模型，再测试连接并保存。</figcaption>
+            <figcaption>3. 先选择 <code>云端</code>，再选择服务商。中国用户更推荐优先使用 <code>DeepSeek（深度求索）</code>；如果你使用的服务商不在列表中，也可以选择 <code>自定义 customize</code>。来源名称可以自由填写，建议用模型缩写，方便以后辨认，例如 <code>DeepSeek R1</code> 可写成 <code>dp_R1</code>。确认 <code>API Key</code>、<code>Base URL</code> 和模型都正确后，再测试连接并保存。</figcaption>
           </figure>
         </div>
-        <p class="support-note">为什么建议先做这一步：它是最快让心如真正开始工作的方式；如果不先设置云端来源，很多人设一开始就不会有可用的默认来源。</p>
+        <div class="support-note">
+          <h3>什么是 API Key？</h3>
+          <p><code>API Key</code> 可以理解为你在云端 AI 服务商那里的“使用凭证”。心如本身不卖这个 Key，也不会替你收这笔钱；费用是你直接支付给服务商，例如 DeepSeek、OpenAI 等。</p>
+          <p>如果你是第一次接触，可以先从 DeepSeek 开始。注册、充值后就能拿到自己的 Key，再把它填进心如里即可。通常入门成本并不高，少量充值就能使用很长一段时间。</p>
+          <p><a href="https://platform.deepseek.com/sign_in" target="_blank" rel="noreferrer">前往 DeepSeek 获取 API Key</a></p>
+        </div>
       </div>
 
-      <div class="section-heading" style="margin-top:40px;"><h2 class="section-title">下载本地 AI 模型</h2></div>
+      <div class="section-heading" style="margin-top:40px;"><h2 class="section-title">第二步：下载本地 AI 模型</h2></div>
       <div class="panel"><div class="mini-list"><div>打开 `设置 -> 本地AI管理`</div><div>浏览当前可用的本地模型</div><div>根据自己的需求选择一个模型</div><div>点击 `下载`</div><div>等待模型下载完成</div></div><p class="support-note">本地模型下载完成后，它会自动出现在 `AI配置 -> 默认本地来源` 中。对这些由系统管理的本地模型，你不需要再手动新建一个本地来源。</p></div>
 
-      <div class="section-heading" style="margin-top:40px;"><h2 class="section-title">选择默认来源</h2></div>
+      <div class="section-heading" style="margin-top:40px;"><h2 class="section-title">第三步：选择默认来源</h2></div>
       <div class="panel"><div class="mini-list"><div>回到 `设置 -> AI配置`</div><div>先选一个 `默认云端来源`</div><div>再选一个 `默认本地来源`</div></div><p class="support-note">为什么这一步重要：心如的人设依赖默认来源；新用户一开始不会自动拥有默认来源；如果跳过这一步，有些人设就可能无法正常工作。</p></div>
 
       <div class="card-grid two-cols" style="margin-top:40px;">
