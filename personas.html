@@ -3,28 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>人设 - 心如 Xinru</title>
+    <title>Prompt AI 人设 - 心如 Xinru</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header"><div class="nav"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span><span>心如 Xinru</span></a><nav class="nav-links"><a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./download.html">下载</a><a class="nav-link" href="./guide.html">新手教程</a><a class="nav-link" href="./features.html">功能</a><a class="nav-link is-active" href="./personas.html">人设</a><a class="nav-link" href="./about.html">关于</a><a class="nav-link" href="./faq.html">FAQ</a></nav><div class="lang-switch"><span class="lang-label">中文</span></div></div></header>
-    <main class="section">
-      <div class="page-hero"><h1 class="section-title">8 个公开内置人设</h1><p class="section-desc">每个人设都代表一个典型使用场景。网站与程序后续会尽量保持这套中英名称一致。</p></div>
-      <div class="card-grid two-cols">
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">无 AI 优化</h3><span class="persona-mode">NO AI</span></div><p class="persona-en">No AI Optimization</p><p class="persona-desc">保留原始识别结果，不做 AI 改写。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">通用优化</h3><span class="persona-mode">OPTIMIZE</span></div><p class="persona-en">General Optimization</p><p class="persona-desc">修正语法、整理逻辑、输出更清晰的表达。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">翻译模式</h3><span class="persona-mode">TRANSLATE</span></div><p class="persona-en">Translation Mode</p><p class="persona-desc">在中文与英文之间自然翻译，不做生硬直译。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">会议记录</h3><span class="persona-mode">MEETING</span></div><p class="persona-en">Meeting Notes</p><p class="persona-desc">提炼讨论重点、决定事项、待办和开放问题。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">通用 AI</h3><span class="persona-mode">ASSISTANT</span></div><p class="persona-en">General AI</p><p class="persona-desc">直接作为通用 AI 对话入口，适合自由提问与快速协助。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">助手模式</h3><span class="persona-mode">ASSISTANT</span></div><p class="persona-en">Assistant Mode</p><p class="persona-desc">根据你的问题或任务直接给出回答和执行结果。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">课堂笔记</h3><span class="persona-mode">STUDY</span></div><p class="persona-en">Class Notes</p><p class="persona-desc">提炼课程核心概念、逻辑、例子和补充知识。</p></article>
-        <article class="persona-card"><div class="persona-head"><h3 class="persona-name">网课摘要</h3><span class="persona-mode">SUMMARY</span></div><p class="persona-en">Course Summary</p><p class="persona-desc">把较长课程音频压缩为更易回顾的重点摘要。</p></article>
+    <header class="site-header"><div class="nav"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span><span>心如 Xinru</span></a><nav class="nav-links"><a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./download.html">下载</a><a class="nav-link" href="./guide.html">新手教程</a><a class="nav-link" href="./features.html">功能</a><a class="nav-link is-active" href="./personas.html">人设</a><a class="nav-link" href="./about.html">关于</a><a class="nav-link" href="./faq.html">FAQ</a></nav></div></header>
+    <main class="section page-main">
+      <div class="page-hero">
+        <div class="hero-title-lockup">
+          <span class="hero-title-logo" aria-hidden="true"></span>
+          <h1 class="section-title">Prompt AI 人设</h1>
+        </div>
       </div>
+
+      <article class="panel persona-overview-card personas-intro-grid">
+        <div class="persona-intro-copy">
+          <p>我们提供 8 个公开内置人设，标题本身保持固定，方便你在教程、工作流和不同页面之间快速对上号；但每个人设背后的 <code>prompt</code>，你都可以按自己的习惯做小幅调整。</p>
+
+          <h2>这 8 个内置人设怎么理解</h2>
+          <div class="mini-list">
+            <div>人设标题由我们提供，尽量保持稳定，方便你一眼分清它们各自负责什么工作。</div>
+            <div>真正可以灵活调整的是每个人设背后的 <code>prompt</code>；你可以小改语气、规则、目标语言或输出格式。</div>
+            <div>每个人设都有自己的颜色，小气泡和界面提示都会跟着这个颜色走；下面这些卡片配色，也是在对应这套颜色管理。</div>
+          </div>
+
+          <h2>你可以自己控制什么</h2>
+          <div class="mini-list">
+            <div>每个模式都可以单独指定使用本地 AI 或云端 AI。</div>
+            <div><code>Temperature</code> 越高，回答越活；越低，回答越稳。</div>
+            <div><code>Max Tokens</code> 决定它一次最多能输出多长内容。</div>
+            <div>除了 8 个公开内置人设，你还可以继续建立 4 个完全可自定义的模式，做成你自己的工作流。</div>
+          </div>
+        </div>
+      </article>
+
+      <div class="section-heading">
+        <h2 class="section-title">8 个公开内置人设</h2>
+        <p class="section-desc">卡片颜色与程序中的人设颜色保持对应；你看到哪种颜色，程序里唤起时的小气泡和提示色也会跟着对应起来。</p>
+      </div>
+
+      <div class="card-grid two-cols">
+        <article class="panel persona-card persona-noai">
+          <div class="persona-title-line">
+            <h3 class="persona-name">无 AI 优化</h3>
+            <span class="persona-en">No AI Optimization</span>
+          </div>
+          <p class="persona-desc">保留 ASR 原始识别结果，不做 AI 改写。适合你只想先得到原文、后续再自己处理，或者就是想忠实保留原始输入的场景。</p>
+        </article>
+
+        <article class="panel persona-card persona-optimize">
+          <div class="persona-title-line">
+            <h3 class="persona-name">通用优化</h3>
+            <span class="persona-en">General Optimization</span>
+          </div>
+          <p class="persona-desc">这是最常用的人设之一。它会修正语法、整理逻辑、去掉废话，让表达更简洁清楚，适合日常沟通、写作辅助、搜索提问，以及把口语整理成更适合发给别人看的文字。</p>
+        </article>
+
+        <article class="panel persona-card persona-translate">
+          <div class="persona-title-line">
+            <h3 class="persona-name">翻译模式</h3>
+            <span class="persona-en">Translation Mode</span>
+          </div>
+          <p class="persona-desc">默认适合中英之间的自然翻译，但并不只限于中英。你可以直接小改这个人设背后的 prompt，让它变成中德、英法或其他你需要的语言组合，重点是自然理解语义，而不是生硬直译。</p>
+        </article>
+
+        <article class="panel persona-card persona-meeting">
+          <div class="persona-title-line">
+            <h3 class="persona-name">会议记录</h3>
+            <span class="persona-en">Meeting Notes</span>
+          </div>
+          <p class="persona-desc">这是心如最核心的人设之一。它可以帮助你把会议中的重点、决策、待办和开放问题整理出来；更重要的是，心如并不需要真正录制整场会议，而是通过本地语音转文字去理解内容，对隐私和公司内部数据都会更友好。</p>
+        </article>
+
+        <article class="panel persona-card persona-general">
+          <div class="persona-title-line">
+            <h3 class="persona-name">通用 AI</h3>
+            <span class="persona-en">General AI</span>
+          </div>
+          <p class="persona-desc">这个模式最接近平时直接使用 AI 的普通方式：没有额外的人设包装，也没有特殊提示词，你怎么问，它就怎么答。适合自由提问、聊天、临时查东西，或者把它当成最朴素的 AI 入口来使用。</p>
+        </article>
+
+        <article class="panel persona-card persona-assistant">
+          <div class="persona-title-line">
+            <h3 class="persona-name">助手模式</h3>
+            <span class="persona-en">Assistant Mode</span>
+          </div>
+          <p class="persona-desc">它和通用 AI 很接近，但更偏向“帮你完成任务”。当你明确交代一个问题或任务时，它会更倾向于直接给出执行结果、整理答案或推进事情，而不是只陪你闲聊。</p>
+        </article>
+
+        <article class="panel persona-card persona-study">
+          <div class="persona-title-line">
+            <h3 class="persona-name">课堂笔记</h3>
+            <span class="persona-en">Class Notes</span>
+          </div>
+          <p class="persona-desc">这也是很核心的场景。很多语音工具不擅长处理特别长的内容，但心如更适合长时间持续输入；上完一整节课后，它可以把长语音整理成结构化笔记，哪怕环境里有杂音，也会尽量结合上下文帮助你还原重点。</p>
+        </article>
+
+        <article class="panel persona-card persona-summary">
+          <div class="persona-title-line">
+            <h3 class="persona-name">网课摘要</h3>
+            <span class="persona-en">Course Summary</span>
+          </div>
+          <p class="persona-desc">这是另一个很有特色的场景。它更适合处理来自电脑扬声器的系统音频，例如网课、YouTube 或课程回放；通过配合 <code>BlackHole</code> 这类虚拟音频工具，心如可以拿到更干净的课程声音，再把内容整理成更容易回顾的摘要和笔记。</p>
+        </article>
+      </div>
+
+      <article class="panel persona-overview-card" style="margin-top: var(--space-2xl);">
+        <h2>4 个可自定义模式</h2>
+        <div class="mini-list">
+          <div>除了固定的 8 个公开内置人设，你还可以继续建立 4 个完全可自定义的模式，按自己的工作流自由设计。</div>
+          <div>你可以决定它们分别用哪一个 AI、本地还是云端、温度高低、最大输出长度，以及 prompt 的整体风格。</div>
+          <div>也就是说，心如不是把一套固定规则塞给你，而是给你一个可以自己掌控、自己长出来的 AI 工作台。</div>
+        </div>
+      </article>
     </main>
-    <footer class="site-footer"><div class="footer-layout"><div><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span><span>心如 Xinru</span></a><p>面向中文场景优化的桌面 AI 工具。</p></div><div class="footer-links"><a href="./index.html">首页</a><a href="./download.html">下载</a><a href="./guide.html">新手教程</a><a href="./features.html">功能</a><a href="./personas.html">人设</a><a href="./about.html">关于</a><a href="./faq.html">FAQ</a></div></div></footer>
+    <footer class="site-footer"><div class="footer-links"><a href="./index.html">首页</a><a href="./download.html">下载</a><a href="./guide.html">新手教程</a><a href="./features.html">功能</a><a href="./personas.html">人设</a><a href="./about.html">关于</a><a href="./faq.html">FAQ</a></div></footer>
     <script src="./script.js"></script>
   </body>
 </html>
