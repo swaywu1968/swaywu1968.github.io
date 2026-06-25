@@ -282,6 +282,8 @@ code {
 }
 
 .section-heading { margin-bottom: var(--space-xl); }
+.page-hero .section-desc,
+.home-hero-section .section-desc { text-align: center; }
 
 .hero-copy h1,
 .section-title {
@@ -307,6 +309,7 @@ code {
 .about-copy p {
   color: var(--text-soft);
 }
+.persona-desc { line-height: 1.5; margin-top: 0; }
 
 /* 按钮 */
 .button {
@@ -475,7 +478,7 @@ code {
 /* 步骤与人设 */
 .steps-list { display: grid; gap: 18px; }
 .personas-intro-grid { margin-bottom: 18px; }
-.persona-intro-copy { display: grid; gap: 14px; width: min(100%, 920px); margin-top: 16px; }
+.persona-intro-copy { display: grid; gap: 14px; width: min(100%, 920px); margin-top: 10px; }
 .persona-intro-copy h2 { margin: 0; font-size: 1.25rem; }
 .persona-intro-copy .mini-list { padding-left: 0; width: 100%; }
 
@@ -504,9 +507,10 @@ code {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 10px 14px;
-  margin: 0 0 var(--space-lg);
+  margin: 0 0 4px;
 }
 .persona-name { font-size: 1.1rem; font-weight: 700; }
+.persona-card .persona-name { margin: 0; }
 .persona-overview-card h2 { margin: 0 0 14px; }
 
 .persona-en,
